@@ -307,6 +307,7 @@ body {
     align-items: center;
     gap: 12px;
     cursor: pointer;
+    text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: var(--shadow-md);
 }
@@ -367,6 +368,7 @@ footer {
 .social-links a {
     color: var(--text-secondary);
     font-size: 1.2rem;
+    text-decoration: none;
     transition: color 0.3s;
 }
 
@@ -380,6 +382,7 @@ footer {
         flex-direction: column;
         text-align: center;
         padding-top: 20px;
+        min-height: auto;
     }
 
     .hero-content {
@@ -388,33 +391,139 @@ footer {
         align-items: center;
     }
 
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
     .hero-buttons {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .phone-mockup-container {
         margin-top: 40px;
-        transform: scale(0.9);
+    }
+
+    .app-preview-image {
+        max-width: 250px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .features-section {
+        padding: 60px 0;
+    }
+
+    .download-section {
+        padding: 60px 20px;
+    }
+
+    .download-content h2 {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 600px) {
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .btn-sm {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .app-preview-image {
+        max-width: 200px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .feature-card {
+        padding: 25px;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .download-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .download-content p {
+        font-size: 0.95rem;
+        padding: 0 10px;
     }
 
     .download-buttons {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .store-btn {
         width: 100%;
-        max-width: 250px;
+        max-width: 280px;
     }
 
     footer {
         flex-direction: column;
         gap: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .app-preview-image {
+        max-width: 180px;
+    }
+
+    .feature-card {
+        padding: 20px;
     }
 }
