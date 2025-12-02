@@ -650,24 +650,47 @@ footer {
         justify-content: center;
     }
 
+    /* Mobile: Switch to vertical stacked layout */
     .phone-mockup-container {
-        width: 100%;
-        min-height: 450px;
+        flex-direction: column;
+        min-height: auto;
         margin-top: 40px;
+        gap: 30px;
+        padding: 20px 0;
     }
 
     .phone-mockup {
-        width: 220px;
+        position: relative;
+        width: 200px;
+        left: auto;
+        right: auto;
+        top: auto;
+        animation: none;
     }
 
     .mockup-1 {
-        left: 10%;
-        transform: translateY(-50%) rotate(6deg) translateX(0);
+        transform: rotate(3deg);
+        margin-left: -20px;
     }
 
     .mockup-2 {
-        right: 10%;
-        transform: translateY(-50%) rotate(-6deg) translateX(0) translateY(50px);
+        transform: rotate(-3deg);
+        margin-right: -20px;
+    }
+
+    /* Disable hover effects on mobile */
+    .phone-mockup-container:hover .mockup-1,
+    .phone-mockup-container:hover .mockup-2 {
+        transform: rotate(3deg);
+    }
+
+    .phone-mockup-container:hover .mockup-2 {
+        transform: rotate(-3deg);
+    }
+
+    /* Reduce glow on mobile */
+    .phone-mockup::before {
+        display: none;
     }
 
 
