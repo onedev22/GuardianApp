@@ -41,7 +41,7 @@ body {
     position: relative;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -101,7 +101,7 @@ body {
     transform: translateY(-1px);
 }
 
-/* Hero Section */
+
 .hero-section {
     display: flex;
     align-items: center;
@@ -243,124 +243,39 @@ body {
     color: var(--text-secondary);
 }
 
-/* Phone Mockups - Dynamic Angled Layout */
+
 .phone-mockup-container {
     flex: 1;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: 30px;
     min-height: 600px;
-    perspective: 1000px;
 }
 
 .phone-mockup {
     width: 280px;
-    position: absolute;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5));
+    position: relative;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
 }
 
 .mockup-1 {
-    /* Left image - tilted to the right */
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%) rotate(8deg) translateX(-40px);
-    z-index: 2;
-    animation: float-left 6s ease-in-out infinite;
+    transform: rotate(5deg);
 }
 
 .mockup-2 {
-    /* Right image - tilted to the left */
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%) rotate(-8deg) translateX(40px) translateY(60px);
-    z-index: 1;
-    animation: float-right 6s ease-in-out infinite 1s;
-}
-
-/* Hover effects - images straighten and lift */
-.phone-mockup-container:hover .mockup-1 {
-    transform: translateY(-50%) rotate(4deg) translateX(-50px) translateY(-20px) scale(1.05);
-    filter: drop-shadow(0 30px 60px rgba(59, 130, 246, 0.4));
-}
-
-.phone-mockup-container:hover .mockup-2 {
-    transform: translateY(-50%) rotate(-4deg) translateX(50px) translateY(40px) scale(1.05);
-    filter: drop-shadow(0 30px 60px rgba(139, 92, 246, 0.4));
-}
-
-/* Floating animations */
-@keyframes float-left {
-
-    0%,
-    100% {
-        transform: translateY(-50%) rotate(8deg) translateX(-40px) translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-50%) rotate(8deg) translateX(-40px) translateY(-15px);
-    }
-}
-
-@keyframes float-right {
-
-    0%,
-    100% {
-        transform: translateY(-50%) rotate(-8deg) translateX(40px) translateY(60px);
-    }
-
-    50% {
-        transform: translateY(-50%) rotate(-8deg) translateX(40px) translateY(75px);
-    }
-}
-
-/* Glow effects behind images */
-.phone-mockup::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120%;
-    height: 120%;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
-    z-index: -1;
-    opacity: 0.6;
-    filter: blur(40px);
-    animation: pulse-glow 4s ease-in-out infinite;
-}
-
-.mockup-2::before {
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, transparent 70%);
-    animation-delay: 2s;
-}
-
-@keyframes pulse-glow {
-
-    0%,
-    100% {
-        opacity: 0.6;
-        transform: translate(-50%, -50%) scale(1);
-    }
-
-    50% {
-        opacity: 0.8;
-        transform: translate(-50%, -50%) scale(1.1);
-    }
+    transform: rotate(-5deg);
 }
 
 .app-preview-image {
     width: 100%;
     height: auto;
     display: block;
-    box-shadow: none;
-    border: none;
     border-radius: 24px;
 }
 
-/* Features Section */
+
 .features-section {
     padding: 100px 0;
 }
@@ -450,7 +365,7 @@ body {
     font-size: 1rem;
 }
 
-/* Download Section */
+
 .download-section {
     padding: 100px 0;
     text-align: center;
@@ -539,7 +454,7 @@ body {
     font-weight: 800;
 }
 
-/* Footer */
+
 footer {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 60px 0;
@@ -589,7 +504,7 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Responsive */
+
 @media (max-width: 1024px) {
     .hero-section {
         flex-direction: column;
@@ -622,7 +537,7 @@ footer {
 
 @media (max-width: 640px) {
 
-    /* Ensure dark background on mobile */
+
     body {
         background-color: var(--bg-color);
         background-image:
@@ -692,7 +607,7 @@ footer {
         padding-top: 16px;
     }
 
-    /* Mobile: Switch to vertical stacked layout */
+
     .phone-mockup-container {
         flex-direction: column;
         min-height: auto;
@@ -721,7 +636,7 @@ footer {
         margin-right: -15px;
     }
 
-    /* Disable hover effects on mobile */
+
     .phone-mockup-container:hover .mockup-1 {
         transform: rotate(2deg);
         filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.6));
@@ -732,7 +647,7 @@ footer {
         filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.6));
     }
 
-    /* Reduce glow on mobile */
+
     .phone-mockup::before {
         display: none;
     }
