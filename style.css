@@ -250,14 +250,53 @@ footer {
     .hero-section {
         flex-direction: column;
         text-align: center;
+        padding: 40px 0;
     }
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .phone-mockup-container {
         justify-content: center;
+        margin-top: 40px;
     }
     .hero-buttons {
         justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    .btn-primary {
+        width: 100%;
+        justify-content: center;
+        padding: 16px;
+    }
+    .phone-mockup {
+        width: 100%;
+        max-width: 280px;
+    }
+    .navbar {
+        padding: 24px 0;
+    }
+    .nav-links {
+        display: none;
+    }
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 }
