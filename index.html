@@ -4,27 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuardianApp - Seguridad Inteligente para Android</title>
+    <title>Guardian - Detección de Choques Inteligente</title>
 
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://onedev22.github.io/GuardianApp/">
-    <meta property="og:title" content="GuardianApp - Seguridad Inteligente para Android">
-    <meta property="og:description"
-        content="Detecta accidentes y protege a tus seres queridos automáticamente. Descarga ahora.">
-    <meta property="og:image" content="https://onedev22.github.io/GuardianApp/home.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GuardianApp - Seguridad Inteligente">
-    <meta name="twitter:description" content="Detecta accidentes y protege a tus seres queridos automáticamente.">
-    <meta name="twitter:image" content="https://onedev22.github.io/GuardianApp/home.png">
+    <meta property="og:title" content="Guardian - Seguridad Inteligente">
+    <meta property="og:description" content="Protección avanzada con tecnología inteligente para conductores y ciclistas.">
+    <meta property="og:image" content="home.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -33,120 +21,84 @@
     <div class="app-container">
         <nav class="navbar">
             <div class="logo">
-                <i class="fa-solid fa-shield-heart"></i> GuardianApp
+                <i class="fa-solid fa-shield-heart"></i> GUARDIAN
             </div>
             <div class="nav-links">
-                <a href="#features">Características</a>
-                <a href="#download" class="btn-sm">Descargar</a>
+                <a href="#features">Tecnología</a>
+                <a href="#download" class="btn-sm">Instalar APK</a>
             </div>
         </nav>
 
-        <section class="hero-section active">
+        <section class="hero-section">
             <div class="hero-content">
-                <div class="badge-new">v2.0 Disponible</div>
-                <h1>Seguridad inteligente <br> <span class="gradient-text">siempre contigo</span></h1>
-                <p>GuardianApp detecta accidentes y protege a tus seres queridos automáticamente. La seguridad personal
-                    evolucionada.</p>
+                <div class="badge-new">NUEVA VERSIÓN 2.5</div>
+                <h1>Detección de choques <br> <span class="gradient-text">inteligente</span></h1>
+                <p>Guardian utiliza algoritmos de análisis sensorial para detectar accidentes en tiempo real y alertar a tus contactos cuando más lo necesitas.</p>
+                
                 <div class="hero-buttons">
-                    <a href="https://github.com/onedev22/GuardianApp/releases/download/1.0/app-release.apk"
-                        class="btn-primary">
+                    <a href="https://github.com/onedev22/GuardianApp/releases/download/app/app-debug.apk" class="btn-primary">
                         <i class="fa-brands fa-android"></i> Descargar APK
                     </a>
-                    <a href="#features" class="btn-secondary">
-                        <i class="fa-solid fa-circle-info"></i> Saber más
-                    </a>
-                </div>
-                <div class="download-counter">
-                    <i class="fa-solid fa-download"></i>
-                    <span id="download-count">--</span>
-                    <span>descargas</span>
-                </div>
-                <div class="trust-badge">
-                    <div class="avatars">
-                        <span><i class="fa-solid fa-user-shield"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-check"></i></span>
-                    </div>
-                    <p>Confianza y seguridad garantizada</p>
                 </div>
             </div>
 
             <div class="phone-mockup-container">
-                <div class="phone-mockup mockup-1">
-                    <img src="home.png" alt="Guardian App Home" class="app-preview-image">
-                </div>
-                <div class="phone-mockup mockup-2">
-                    <img src="ajustes.png" alt="Guardian App Settings" class="app-preview-image">
+                <div class="phone-mockup">
+                    <img src="home.png" alt="Guardian Interface">
                 </div>
             </div>
         </section>
 
         <section id="features" class="features-section">
             <div class="section-header">
-                <h2>Protección integral</h2>
-                <p>Tecnología avanzada diseñada para salvar vidas en cada trayecto.</p>
+                <h2>Protección Avanzada</h2>
+                <p>Guardian integra múltiples sistemas de seguridad en una sola aplicación potente y ligera.</p>
             </div>
+            
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="icon-box"><i class="fa-solid fa-car-burst"></i></div>
-                    <h3>Detección de Choques</h3>
-                    <p>Algoritmos avanzados que utilizan los sensores de tu dispositivo para identificar impactos
-                        severos al instante.</p>
+                    <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Análisis Sensorial</h3>
+                    <p>Monitoreo constante del acelerómetro y giroscopio para identificar patrones de impacto seco y caídas violentas.</p>
                 </div>
+                
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fa-solid fa-file-medical"></i></div>
+                    <h3>Ficha Médica</h3>
+                    <p>Muestra tu información vital (sangre, alergias, EPS) directamente en la pantalla de emergencia para asistencia inmediata.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fa-solid fa-microphone-lines"></i></div>
+                    <h3>Caja Negra</h3>
+                    <p>Grabación automática de audio ambiental tras un accidente para asegurar evidencia protegida en tu dispositivo.</p>
+                </div>
+                
                 <div class="feature-card">
                     <div class="icon-box"><i class="fa-solid fa-tower-broadcast"></i></div>
-                    <h3>SOS Automático</h3>
-                    <p>Envío inmediato de ubicación y alertas a tus contactos de emergencia si no respondes tras un
-                        accidente.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i class="fa-solid fa-battery-full"></i></div>
-                    <h3>Eficiencia Energética</h3>
-                    <p>Optimización inteligente para protegerte 24/7 sin comprometer la batería de tu dispositivo.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
-                    <h3>Rastreo Preciso</h3>
-                    <p>Localización GPS de alta precisión para que la ayuda llegue exactamente donde la necesitas.</p>
+                    <h3>Protocolo SOS</h3>
+                    <p>Envío de ubicación precisa vía SMS y llamada automática a servicios de emergencia si el usuario no responde.</p>
                 </div>
             </div>
         </section>
 
         <section id="download" class="download-section">
             <div class="download-content">
-                <h2>Tu seguridad no puede esperar</h2>
-                <p>Únete a los usuarios que ya confían en GuardianApp para su protección diaria.</p>
-                <div class="download-buttons">
-                    <a href="https://github.com/onedev22/GuardianApp/releases/download/app/app-debug.apk"
-                        class="store-btn">
-                        <i class="fa-brands fa-android"></i>
-                        <div class="btn-text">
-                            <span>DESCARGAR PARA</span>
-                            <strong>Android</strong>
-                        </div>
-                    </a>
-                </div>
-                <div class="download-stats">
-                    <div class="stat-item">
-                        <i class="fa-solid fa-download"></i>
-                        <span class="stat-number" id="download-count-section">--</span>
-                        <span class="stat-label">Descargas totales</span>
-                    </div>
-                </div>
+                <h2>No viajes solo, viaja protegido</h2>
+                <p>Descarga la última versión de Guardian y configura tus contactos de emergencia hoy mismo.</p>
+                <a href="https://github.com/onedev22/GuardianApp/releases/download/app/app-debug.apk" class="btn-primary" style="display:inline-flex;">
+                    <i class="fa-brands fa-android"></i> Obtener para Android
+                </a>
             </div>
         </section>
 
         <footer>
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fa-solid fa-shield-heart"></i> GuardianApp
-                </div>
-                <p>&copy; 2024 GuardianApp. Todos los derechos reservados.</p>
+            <div class="footer-logo">
+                <i class="fa-solid fa-shield-heart"></i> GUARDIAN
             </div>
+            <p>&copy; 2024 Guardian Project. Creado para salvar vidas.</p>
             <div class="social-links">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/onedev22/GuardianApp"><i class="fa-brands fa-github"></i></a>
             </div>
         </footer>
     </div>
